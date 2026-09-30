@@ -1,0 +1,28 @@
+|--- frequency <= 4.50
+|   |--- frequency <= 2.50
+|   |   |--- recency_days <= 164.50
+|   |   |   |--- avg_margin_pct <= 40.56
+|   |   |   |   |--- class: 0
+|   |   |   |--- avg_margin_pct >  40.56
+|   |   |   |   |--- class: 1
+|   |   |--- recency_days >  164.50
+|   |   |   |--- class: 0
+|   |--- frequency >  2.50
+|   |   |--- recency_days <= 97.50
+|   |   |   |--- monetary <= 1941.71
+|   |   |   |   |--- class: 1
+|   |   |   |--- monetary >  1941.71
+|   |   |   |   |--- class: 1
+|   |   |--- recency_days >  97.50
+|   |   |   |--- class: 0
+|--- frequency >  4.50
+|   |--- recency_days <= 89.50
+|   |   |--- avg_margin_pct <= 36.21
+|   |   |   |--- avg_margin_pct <= 32.58
+|   |   |   |   |--- class: 1
+|   |   |   |--- avg_margin_pct >  32.58
+|   |   |   |   |--- class: 1
+|   |   |--- avg_margin_pct >  36.21
+|   |   |   |--- class: 1
+|   |--- recency_days >  89.50
+|   |   |--- class: 1

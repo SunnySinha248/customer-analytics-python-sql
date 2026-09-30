@@ -1,0 +1,10 @@
+,issues_found
+duplicate_order_rows,25
+duplicate_customer_ids,0
+null_age,40
+null_region,30
+age_out_of_range_(<18_or_>90),15
+orphan_order_items,0
+orphan_orders_no_customer,0
+non_positive_quantity,0
+price_below_cost,0

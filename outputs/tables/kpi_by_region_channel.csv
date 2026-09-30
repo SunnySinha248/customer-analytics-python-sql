@@ -1,0 +1,13 @@
+region,channel,orders,revenue,margin_pct
+East,Online,1870,749675.6,33.09
+East,Store,1044,479953.48,33.41
+East,Marketplace,474,226132.0,34.4
+North,Online,2412,958813.87,32.66
+North,Store,1345,651403.9,32.76
+North,Marketplace,585,273056.12,33.04
+South,Online,1509,607735.34,32.67
+South,Store,932,413652.68,33.05
+South,Marketplace,369,171982.14,32.97
+West,Online,1723,708574.71,32.33
+West,Store,1026,496764.21,32.47
+West,Marketplace,415,177000.12,34.17

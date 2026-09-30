@@ -1,0 +1,93 @@
+{
+  "data_quality_issues": {
+    "duplicate_order_rows": 25,
+    "duplicate_customer_ids": 0,
+    "null_age": 40,
+    "null_region": 30,
+    "age_out_of_range_(<18_or_>90)": 15,
+    "orphan_order_items": 0,
+    "orphan_orders_no_customer": 0,
+    "non_positive_quantity": 0,
+    "price_below_cost": 0
+  },
+  "kpis": {
+    "orders": 13829.0,
+    "active_customers": 2107.0,
+    "revenue": 5969662.25,
+    "profit": 1963206.04,
+    "margin_pct": 32.89,
+    "avg_order_value": 431.68
+  },
+  "statistical_tests": {
+    "ttest_online_vs_store_order_value": {
+      "online_mean": 401.92,
+      "store_mean": 469.78,
+      "t": -8.59,
+      "p": 1.0176346444284055e-17
+    },
+    "anova_order_value_by_region": {
+      "F": 0.491,
+      "p": 0.6882535924580344,
+      "kruskal_H": 1.14,
+      "kruskal_p": 0.7673496864798963
+    }
+  },
+  "segmentation_k": 4,
+  "segment_profile": [
+    {
+      "segment": 0,
+      "customers": 777,
+      "avg_recency_days": 58.2,
+      "avg_frequency": 4.7,
+      "avg_monetary": 2029.7,
+      "total_revenue": 1577051.3,
+      "revenue_share_pct": 26.4,
+      "label": "Loyal / Growing"
+    },
+    {
+      "segment": 1,
+      "customers": 459,
+      "avg_recency_days": 70.3,
+      "avg_frequency": 1.8,
+      "avg_monetary": 519.3,
+      "total_revenue": 238364.4,
+      "revenue_share_pct": 4.0,
+      "label": "Low value"
+    },
+    {
+      "segment": 2,
+      "customers": 641,
+      "avg_recency_days": 39.2,
+      "avg_frequency": 13.8,
+      "avg_monetary": 6110.6,
+      "total_revenue": 3916870.9,
+      "revenue_share_pct": 65.6,
+      "label": "Champions"
+    },
+    {
+      "segment": 3,
+      "customers": 230,
+      "avg_recency_days": 290.6,
+      "avg_frequency": 2.3,
+      "avg_monetary": 1032.1,
+      "total_revenue": 237375.7,
+      "revenue_share_pct": 4.0,
+      "label": "At risk"
+    }
+  ],
+  "decision_tree": {
+    "auc": 0.681,
+    "base_rate_repeat": 0.833,
+    "accuracy": 0.664,
+    "top_drivers": {
+      "frequency": 0.754,
+      "recency_days": 0.17,
+      "avg_margin_pct": 0.058
+    }
+  },
+  "forecast_backtest": {
+    "holdout_months": 6,
+    "mape_model_pct": 5.5,
+    "mape_last_value_baseline_pct": 19.8
+  }
+}
